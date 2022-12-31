@@ -8,6 +8,11 @@ This is my personal QMK setup for my GMMK Pro ANSI Rev 1.0. I was very unimpress
 
 This repository has two keymaps, one for my personal preferred layout, and one with the stock GMMK Pro layout. The first layer contains a few essential extras, including media keys, a numpad with num lock toggle, and a reboot to bootloader switch. Keys on the first layer are custom-backlit to help identify their functions and locations. Each keymap can control QMK RGB effects, including mode, hue, saturation, and brightness. There is the option to enable RGB effects on only the side lighting while leaving the top blank. I have also included one additional lighting mode, which is a solid user-defined color on only the sides, with the same HSB customization as before. The user-defined mode uses separate memory, so you can have a different HSB set in the user mode versus the QMK RGB mode, and toggle between the two with just a button. These customzations can optionally be saved to the keyboard's EEPROM, with the exception of the user-defined mode settings.
 
+## Demo
+Changing QMK RGB effect and editing HSB values: https://i.imgur.com/U8CNfFn.mp4  
+Toggling QMK RGB effect on top/side LEDs: https://i.imgur.com/mvbiFDD.mp4  
+Toggling between user-defined and QMK side modes: https://i.imgur.com/xscNWM8.mp4  
+Layer 1 custom illumination on Fn key press: https://i.imgur.com/7OueK5t.mp4
 ## Usage and Controls
 
 Credit to [jwhurley1](https://github.com/jwhurley1) for the encoder idea that I've incorporated into my keymap. My firmware has three different lighting types. All adjustments of modes, lighting speed, and HSB values within the types are done by rotating the encoder clockwise and anti-clockwise, but available controls vary slightly depending on the lighting type selected, and some are done with an encoder click instead of rotation. RGB controls are also illuminated when pressing the Fn key.
