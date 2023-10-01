@@ -367,8 +367,10 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
         else {
             if (clockwise) {
                 tap_code16(KC_VOLU);
+                return false;
             } else {
                 tap_code16(KC_VOLD);
+                return false;
             }
         }
     }
@@ -398,11 +400,11 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
         else {
             if (clockwise) {
                 tap_code16(KC_VOLU);
+                return false;
             } else {
                 tap_code16(KC_VOLD);
+                return false;
             }
         }
     }
-
-    return true;
 }
